@@ -1,3 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
 * {
-    color: pink;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* p {
+    line-height: 1.5;
+    font-size: 16px;
+} */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no__click {
+    cursor: not-allowed;
+}
+
+.fa-solid {
+    color: white;
+    background-color: a;
+}
+
+/* 
+
+NAVIGATION
+
+*/
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: rgba(255, 255, 255, 0.51);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.nav__tab {
+    display: flex;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 1200px;
+    height: 40px;
+    margin-top: 48px;
+}
+
+.nav__menu {
+    display: flex;
+    padding-left: 16px;
 }
