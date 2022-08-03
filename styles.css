@@ -75,6 +75,18 @@ NAVIGATION
 
 */
 
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 64px;
+    background-color: #242424;
+    align-items: flex-start;
+    padding: 16px 32px;
+}
+
 .logo-text {
     color: #bbbfff;
     font-weight: 900;
@@ -124,18 +136,7 @@ NAVIGATION
     display: flex;
 }
 
-nav {
-    position: fixed;
-    max-width: 100%;
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    height: 64px;
-    background-color: #242424;
-    align-items: flex-start;
-    padding: 16px 32px;
-}
+
 
 
 
@@ -196,11 +197,13 @@ footer {
     justify-content: center;
     align-content: center;
     background: #242424;
+    height: 120px;
 }
 
 .footer__container {
     width: 100%;
     max-width: 1200px;
+    height: 120px;
     align-items: center;
     justify-content: center;
 }
