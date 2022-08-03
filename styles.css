@@ -30,7 +30,8 @@ button {
 }
 
 body {
-    background-color: black;
+   background-image: url(./assets/bg.jpg);
+   background-size: cover
 }
 
 img {
@@ -56,12 +57,16 @@ img {
     width: 100%;
     min-height: 100vh;
     padding: 5%;
-    background-image: url(./assets/background.jpg);
+
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.blue {
+    color: #bbbfff;
 }
 
 /* 
@@ -71,16 +76,17 @@ NAVIGATION
 */
 
 .logo-text {
-    color: #f4a7bb;
-    font-weight: bold;
-    font-size: 28px;
+    color: #bbbfff;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .dropbtn {
     background-color: transparent;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: 300;
     border: none;
 }
 
@@ -92,20 +98,21 @@ NAVIGATION
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background-color: #242424;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
+    color: #bbbfff;
+    font-size: 16px;
     padding: 12px 16px;
     display: block;
 }
 
 .dropdown-content a:hover {
-    color: rgba(255, 255, 255, 0.51);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,20 +124,20 @@ NAVIGATION
     display: flex;
 }
 
-#logo {
-    width: 100px;
-    height: 50px;
-}
-
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
     max-width: 100%;
     width: 1200px;
-    height: 40px;
-    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 64px;
+    background-color: #242424;
+    align-items: flex-start;
+    padding: 16px 32px;
 }
+
+
 
 .nav__menu {
     display: flex;
@@ -142,6 +149,7 @@ nav {
 LANDING PAGE
 
 */
+
 
 .search-bar {
     width: 100%;
@@ -160,7 +168,7 @@ LANDING PAGE
     outline: none;
     padding: 24px 20px;
     font-size: 20px;
-    color: #cac7ff;
+    color: white;
 }
 
 .search-bar button .search-icon {
@@ -172,6 +180,27 @@ LANDING PAGE
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #f4a7bb;
+    background: #bbbfff;
     cursor: pointer;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: #242424;
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
 }
